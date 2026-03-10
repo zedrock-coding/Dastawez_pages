@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dastawez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#000000]/95 backdrop-blur-lg border-b border-[#333333]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-[#E5E5E5] to-[#FFFFFF] rounded-lg flex items-center justify-center shadow-lg">
+                        <!-- Store icon placeholder -->
+                        <span class="text-[#000000]">S</span>
+                    </div>
+                    <span class="text-[#E5E5E5] tracking-tight">
+                        TechCommerce
+                    </span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group text-[#E5E5E5] hover:bg-[#333333]">
+                        <div class="flex items-center gap-2">
+                            <!-- Home icon placeholder -->
+                            <span>H</span>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group text-[#E5E5E5] hover:bg-[#333333]">
+                        <div class="flex items-center gap-2">
+                            <!-- Store icon placeholder -->
+                            <span>S</span>
+                            <span>Shop/Product</span>
+                        </div>
+                    </a>
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group text-[#E5E5E5] hover:bg-[#333333]">
+                        <div class="flex items-center gap-2">
+                            <!-- Package icon placeholder -->
+                            <span>P</span>
+                            <span>Product Details</span>
+                        </div>
+                    </a>
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group bg-gradient-to-r from-[#333333] to-[#666666] text-[#E5E5E5]">
+                        <div class="flex items-center gap-2">
+                            <!-- Info icon placeholder -->
+                            <span>I</span>
+                            <span>About Us</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF]"></div>
+                    </a>
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group text-[#E5E5E5] hover:bg-[#333333]">
+                        <div class="flex items-center gap-2">
+                            <!-- ShoppingCart icon placeholder -->
+                            <span>C</span>
+                            <span>Cart/Checkout</span>
+                        </div>
+                    </a>
+                    <a href="#" class="relative px-5 py-2.5 rounded-lg transition-all duration-300 group text-[#E5E5E5] hover:bg-[#333333]">
+                        <div class="flex items-center gap-2">
+                            <!-- Mail icon placeholder -->
+                            <span>M</span>
+                            <span>Contact Us</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg bg-[#333333] text-[#E5E5E5] hover:bg-[#666666] transition-colors">
+                    <!-- Menu icon placeholder -->
+                    <span>M</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-[#333333]">
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-[#E5E5E5] hover:bg-[#333333]">
+                        <!-- Home icon placeholder -->
+                        <span>H</span>
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-[#E5E5E5] hover:bg-[#333333]">
+                        <!-- Store icon placeholder -->
+                        <span>S</span>
+                        <span>Shop/Product</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-[#E5E5E5] hover:bg-[#333333]">
+                        <!-- Package icon placeholder -->
+                        <span>P</span>
+                        <span>Product Details</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 bg-gradient-to-r from-[#333333] to-[#666666] text-[#E5E5E5]">
+                        <!-- Info icon placeholder -->
+                        <span>I</span>
+                        <span>About Us</span>
+                        <div class="ml-auto w-2 h-2 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF]"></div>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-[#E5E5E5] hover:bg-[#333333]">
+                        <!-- ShoppingCart icon placeholder -->
+                        <span>C</span>
+                        <span>Cart/Checkout</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-[#E5E5E5] hover:bg-[#333333]">
+                        <!-- Mail icon placeholder -->
+                        <span>M</span>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#666666] to-transparent opacity-50"></div>
+    </header>
+
+    <main>
+        <section id="brand-story" class="py-24 bg-gradient-to-b from-[#000000] to-[#333333] relative overflow-hidden">
+            <!-- Decorative elements -->
+            <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#666666] to-transparent"></div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <span class="text-[#666666] uppercase tracking-wider">Our Journey</span>
+                        <h2 class="text-[#E5E5E5] mt-4 mb-6 text-4xl font-bold">
+                            The Story Behind Our Success
+                        </h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-[#666666] via-[#E5E5E5] to-[#666666] mx-auto"></div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+                        <div>
+                            <div class="relative">
+                                <div class="absolute -inset-4 bg-gradient-to-r from-[#333333] to-[#666666] rounded-2xl blur-xl opacity-30"></div>
+                                <div class="relative bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-2xl">
+                                    <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">The Beginning</h3>
+                                    <p class="text-[#E5E5E5] opacity-80 leading-relaxed">
+                                        Founded in 2020, our journey began with a simple yet powerful vision: to democratize e-commerce technology and make it accessible to businesses of all sizes. What started as a small team of six passionate individuals in a garage has evolved into a leading force in the digital commerce space.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="relative">
+                                <div class="absolute -inset-4 bg-gradient-to-r from-[#666666] to-[#333333] rounded-2xl blur-xl opacity-30"></div>
+                                <div class="relative bg-gradient-to-br from-[#000000] to-[#333333] p-8 rounded-2xl border border-[#666666] shadow-2xl">
+                                    <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Our Growth</h3>
+                                    <p class="text-[#E5E5E5] opacity-80 leading-relaxed">
+                                        Through relentless innovation and unwavering commitment to our customers, we've grown exponentially. Today, we power thousands of online stores worldwide, processing millions of transactions and helping businesses reach their full potential in the digital marketplace.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Overview Timeline -->
+                    <div class="relative">
+                        <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#666666] via-[#E5E5E5] to-[#666666] hidden lg:block"></div>
+                        
+                        <div class="space-y-12">
+                            <div class="flex items-center gap-8 lg:flex-row">
+                                <div class="flex-1 lg:text-right">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2020</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">Company Founded</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">Six visionaries unite with a shared dream</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                            <div class="flex items-center gap-8 lg:flex-row-reverse">
+                                <div class="flex-1 lg:text-left">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2021</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">Platform Launch</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">First 100 merchants join our ecosystem</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                            <div class="flex items-center gap-8 lg:flex-row">
+                                <div class="flex-1 lg:text-right">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2022</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">Series A Funding</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">Raised $10M to accelerate growth</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                            <div class="flex items-center gap-8 lg:flex-row-reverse">
+                                <div class="flex-1 lg:text-left">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2023</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">Global Expansion</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">Expanded to 15+ countries worldwide</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                            <div class="flex items-center gap-8 lg:flex-row">
+                                <div class="flex-1 lg:text-right">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2024</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">AI Integration</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">Launched cutting-edge AI-powered features</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                            <div class="flex items-center gap-8 lg:flex-row-reverse">
+                                <div class="flex-1 lg:text-left">
+                                    <div class="inline-block bg-gradient-to-r from-[#333333] to-[#666666] px-6 py-2 rounded-full mb-3">
+                                        <span class="text-[#E5E5E5]">2025</span>
+                                    </div>
+                                    <h4 class="text-[#E5E5E5] mb-2 text-xl font-bold">Industry Leader</h4>
+                                    <p class="text-[#E5E5E5] opacity-70">Recognized as top e-commerce platform</p>
+                                </div>
+                                <div class="hidden lg:block w-6 h-6 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg shadow-[#E5E5E5]/50 relative z-10"></div>
+                                <div class="flex-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision-mission" class="py-24 bg-gradient-to-b from-[#000000] to-[#333333] relative overflow-hidden">
+            <!-- Animated background gradient orbs -->
+            <div class="absolute top-1/4 left-10 w-96 h-96 bg-[#666666] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-[#E5E5E5] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-700"></div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-[#666666] uppercase tracking-wider">Our Direction</span>
+                    <h2 class="text-[#E5E5E5] mt-4 text-4xl font-bold">Vision & Mission</h2>
+                </div>
+
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                        <!-- Vision Card -->
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-[#E5E5E5] via-[#FFFFFF] to-[#E5E5E5] rounded-3xl blur-lg opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                            <div class="relative h-full bg-gradient-to-br from-[#333333] via-[#000000] to-[#333333] p-10 rounded-3xl border border-[#666666] shadow-2xl">
+                                <div class="inline-flex p-4 rounded-2xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-6 shadow-lg">
+                                    <!-- Eye icon placeholder -->
+                                    <span class="w-10 h-10 text-[#000000]">E</span>
+                                </div>
+                                <h3 class="text-[#E5E5E5] mb-6 text-2xl font-bold">Our Vision</h3>
+                                <p class="text-[#E5E5E5] opacity-90 leading-relaxed mb-6">
+                                    To become the world's most trusted and innovative e-commerce platform, empowering businesses of all sizes to thrive in the digital economy. We envision a future where every entrepreneur has access to enterprise-level technology that drives growth and success.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Global market leadership by 2030</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Empowering 1 million merchants worldwide</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Setting new standards in e-commerce innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission Card -->
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-[#FFFFFF] via-[#E5E5E5] to-[#FFFFFF] rounded-3xl blur-lg opacity-0 group-hover:opacity-20 transition duration-500"></div>
+                            <div class="relative h-full bg-gradient-to-br from-[#000000] via-[#333333] to-[#000000] p-10 rounded-3xl border border-[#666666] shadow-2xl">
+                                <div class="inline-flex p-4 rounded-2xl bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] mb-6 shadow-lg">
+                                    <!-- Target icon placeholder -->
+                                    <span class="w-10 h-10 text-[#000000]">T</span>
+                                </div>
+                                <h3 class="text-[#E5E5E5] mb-6 text-2xl font-bold">Our Mission</h3>
+                                <p class="text-[#E5E5E5] opacity-90 leading-relaxed mb-6">
+                                    To deliver cutting-edge e-commerce solutions that simplify online selling, enhance customer experiences, and drive sustainable business growth. We are committed to innovation, excellence, and building lasting partnerships with our merchants.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Provide intuitive, powerful commerce tools</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Deliver exceptional customer support 24/7</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5]"></div>
+                                        <p class="text-[#E5E5E5] opacity-80">Foster a culture of continuous innovation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Purpose -->
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-[#666666] via-[#E5E5E5] to-[#666666] rounded-3xl blur-lg opacity-20"></div>
+                        <div class="relative bg-gradient-to-r from-[#333333] to-[#000000] p-10 rounded-3xl border border-[#666666] shadow-2xl">
+                            <div class="flex flex-col lg:flex-row items-center gap-8">
+                                <div class="inline-flex p-5 rounded-2xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] shadow-lg flex-shrink-0">
+                                    <!-- Zap icon placeholder -->
+                                    <span class="w-12 h-12 text-[#000000]">Z</span>
+                                </div>
+                                <div class="flex-1 text-center lg:text-left">
+                                    <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Core Purpose</h3>
+                                    <p class="text-[#E5E5E5] opacity-90 leading-relaxed">
+                                        We exist to democratize e-commerce technology and level the playing field for businesses worldwide. By combining powerful features with intuitive design, we enable entrepreneurs to compete with industry giants and build thriving online businesses that transform lives and communities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="company-values" class="py-24 bg-gradient-to-b from-[#333333] to-[#000000] relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute top-0 left-0 w-full h-full" style="background-image: linear-gradient(45deg, #E5E5E5 1px, transparent 1px), linear-gradient(-45deg, #E5E5E5 1px, transparent 1px); background-size: 40px 40px;"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-[#666666] uppercase tracking-wider">What Drives Us</span>
+                    <h2 class="text-[#E5E5E5] mt-4 mb-6 text-4xl font-bold">Our Core Values</h2>
+                    <p class="text-[#E5E5E5] opacity-80 max-w-3xl mx-auto">
+                        These principles guide our decisions, shape our culture, and define who we are as a company.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-6 shadow-lg">
+                                <!-- Heart icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">H</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Customer-Centric</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">Our customers are at the heart of everything we do. We listen, adapt, and deliver solutions that truly matter.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] mb-6 shadow-lg">
+                                <!-- Lightbulb icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">L</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Innovation First</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">We embrace change and continuously push boundaries to create tomorrow's e-commerce experiences today.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-6 shadow-lg">
+                                <!-- Shield icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">S</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Trust & Security</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">We maintain the highest standards of security and transparency, earning trust through consistent reliability.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] mb-6 shadow-lg">
+                                <!-- Users icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">U</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Collaboration</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">We believe in the power of teamwork, fostering an inclusive environment where diverse perspectives thrive.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-6 shadow-lg">
+                                <!-- Rocket icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">R</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Growth Mindset</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">We're committed to continuous learning and improvement, both as individuals and as an organization.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-full bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#FFFFFF] to-[#E5E5E5] mb-6 shadow-lg">
+                                <!-- Star icon placeholder -->
+                                <span class="w-8 h-8 text-[#000000]">S</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-4 text-2xl font-bold">Excellence</h3>
+                            <p class="text-[#E5E5E5] opacity-80 leading-relaxed">We strive for excellence in every detail, delivering quality that exceeds expectations at every touchpoint.</p>
+                            <div class="absolute top-4 right-4 w-8 h-8 opacity-20">
+                                <div class="w-full h-full border-t-2 border-r-2 border-[#E5E5E5] rounded-tr-xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-24 bg-gradient-to-b from-[#333333] to-[#000000] relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute top-20 left-20 w-96 h-96 bg-[#E5E5E5] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="absolute bottom-20 right-20 w-96 h-96 bg-[#666666] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-700"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <!-- Main CTA -->
+                <div class="relative group mb-16">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#E5E5E5] via-[#FFFFFF] to-[#E5E5E5] rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative bg-gradient-to-br from-[#333333] via-[#000000] to-[#333333] p-12 lg:p-16 rounded-3xl border border-[#666666] shadow-2xl text-center">
+                        <h2 class="text-[#E5E5E5] mb-6 text-4xl font-bold">
+                            Ready to Transform Your Business?
+                        </h2>
+                        <p class="text-[#E5E5E5] opacity-90 mb-8 max-w-3xl mx-auto">
+                            Join thousands of merchants who trust us to power their online stores. Start your journey today and experience the difference.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                            <button class="group/btn px-8 py-4 bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] text-[#000000] rounded-lg shadow-2xl hover:shadow-[#E5E5E5]/50 transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+                                Get Started Free
+                                <!-- ArrowRight icon placeholder -->
+                                <span>&rarr;</span>
+                            </button>
+                            <button class="px-8 py-4 bg-[#333333] text-[#E5E5E5] rounded-lg border border-[#666666] hover:bg-[#666666] transition-all duration-300 shadow-lg">
+                                Schedule a Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#666666] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl text-center">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-4 shadow-lg">
+                                <!-- Mail icon placeholder -->
+                                <span class="w-6 h-6 text-[#000000]">M</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-2 text-xl font-bold">Email Us</h3>
+                            <p class="text-[#E5E5E5] mb-1">hello@company.com</p>
+                            <p class="text-[#666666]">We reply within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#666666] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl text-center">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-4 shadow-lg">
+                                <!-- Phone icon placeholder -->
+                                <span class="w-6 h-6 text-[#000000]">P</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-2 text-xl font-bold">Call Us</h3>
+                            <p class="text-[#E5E5E5] mb-1">+1 (555) 123-4567</p>
+                            <p class="text-[#666666]">Mon-Fri 9am-6pm EST</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-[#666666] to-[#E5E5E5] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative bg-gradient-to-br from-[#333333] to-[#000000] p-8 rounded-2xl border border-[#666666] shadow-xl text-center">
+                            <div class="inline-flex p-4 rounded-xl bg-gradient-to-r from-[#E5E5E5] to-[#FFFFFF] mb-4 shadow-lg">
+                                <!-- MapPin icon placeholder -->
+                                <span class="w-6 h-6 text-[#000000]">M</span>
+                            </div>
+                            <h3 class="text-[#E5E5E5] mb-2 text-xl font-bold">Visit Us</h3>
+                            <p class="text-[#E5E5E5] mb-1">123 Tech Street</p>
+                            <p class="text-[#666666]">San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="mt-16 pt-8 border-t border-[#666666] text-center">
+                    <p class="text-[#666666]">
+                        © 2025 Your E-Commerce Company. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
